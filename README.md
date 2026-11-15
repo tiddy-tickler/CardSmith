@@ -71,6 +71,16 @@ Please do not post private collection data, unredacted diagnostics, credentials,
 
 Controlled test builds will be distributed separately to approved testers. Public downloads and release dates are not being promised at this stage.
 
+## Support CardSmith development
+
+CardSmith is an independently developed project. Community involvement helps improve its recognition accuracy, usability and compatibility with real collections.
+
+Financial support is entirely optional. Sharing the project, offering constructive feedback, volunteering relevant technical expertise, or expressing interest in controlled beta testing are also valuable ways to help.
+
+If you would like to support the ongoing development effort financially, the project's fundraiser is available here:
+
+**[Support CardSmith on GoFundMe](https://gofund.me/729fbb185)**
+
 ## About this repository
 
 This public repository is for project information, progress updates and approved demonstrations. The application source code, internal development history, private fixtures and experimental artifacts are maintained separately. No software license or distribution permission is granted by this showcase.
