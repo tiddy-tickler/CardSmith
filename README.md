@@ -45,6 +45,14 @@ A documented offline development replay processed 23 real source images into 135
 
 Experimental models are compared against existing methods before adoption. Candidates that make results worse or fail to provide useful coverage are not promoted into the default processing path.
 
+## Representative development images
+
+A 289-image representative sample has been reviewed for archive integrity. It contains real photographs of binder pages and individual card images, including clearer examples, card backs, glare, rotation, incomplete crops and other genuine processing difficulties.
+
+The sample contains 289 distinct JPEG files, approximately 497 MB in total. It is illustrative development evidence, not a labeled benchmark or a demonstrated recognition-accuracy result.
+
+A smaller browsable gallery and the original-quality sample archive are being prepared for publication. The archive is not currently available as a public download.
+
 ## Roadmap
 
 | Priority | Goal |
