@@ -1,9 +1,13 @@
-# CardSmith Public Gallery Candidate
+# A look at real CardSmith results
 
-This folder contains 32 original JPEG files selected reproducibly from the accompanying representative sample. The images are unchanged CardSmith card-crop outputs; their hash-based filenames match the sample archive and full manifest. Selection used seed 20261116 and stratified random choices across crop-method and crop-quality groups, followed by role-stratified and random fill.
+These are 32 actual card crops produced by CardSmith. I didn't fix the images or pick only the perfect ones. The selection includes fronts, backs, poor crops and images that still need review.
 
-The gallery includes actual output conditions represented in the sample, including front and back roles and results marked for review or poor crop quality. Those labels describe available CardSmith processing metadata; they do not certify card identity or successful isolation. Front/back record links in the full manifest reflect stored inventory associations, and unresolved pairings remain unresolved.
+I used a repeatable selection process (seed 20261116), taking samples across different cropping methods, quality groups and front/back roles, then filling the remaining spots randomly. The original JPEGs and hash-based filenames are unchanged and match the larger sample and manifest.
 
-Original binder-page photographs are not included: JPEG page images contain GPS metadata, and HEIC page images could not be fully decoded or metadata-audited with installed tools. The manifest retains source-page path references for provenance only. No metadata was stripped from included image files.
+The review and quality labels come from CardSmith's processing records. They don't mean a card has been positively identified or that a front and back are a confirmed pair.
 
-The owner confirmed redistribution rights for this prepared set and approved public publication of this 32-image gallery on 2026-11-16. The 289-image original-quality sample is distributed separately through the private tester channel. Full source provenance stays with the private manifest; the hash-based filenames match those source entries.
+I've left the original binder-page photos out of this public gallery because some JPEGs contain GPS information and the HEIC files couldn't be fully decoded or checked for metadata with the available tools. The included crops have not had their metadata stripped.
+
+I approved this set for public redistribution on November 16, 2026. The larger 289-image original-quality sample and full source manifest are kept with the private testing material.
+
+[Go back to the main CardSmith page to browse the pictures](../README.md#real-cardsmith-output).
