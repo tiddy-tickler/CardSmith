@@ -1,53 +1,53 @@
 # CardSmith
 
-**From physical trading cards to an organized digital collection.**
+**Turn your physical card collection into a digital collection without doing everything by hand.**
 
-CardSmith is a local-first trading card identification, automated image processing, collection management and evidence-based appraisal application currently in active development.
+I'm building CardSmith because organizing a large collection of trading cards shouldn't mean spending days photographing, cropping, looking up and typing in information for every single card.
 
-The idea is simple: photograph your collection, including entire binder pages, and let CardSmith do as much of the repetitive work as possible. Instead of manually photographing, cropping, researching and entering every individual card, collectors should be able to build a digital inventory and spend their time reviewing genuine exceptions.
+The idea is pretty simple. Take pictures of your cards, even entire binder pages, and let the software do as much of the work as possible. You should be able to go through the results, fix anything it got wrong and get on with your day.
 
-> **Development status:** Commercial beta in development. Selected workflows have been exercised on real collections, but automatic crop and identification accuracy, performance and release readiness are still being qualified. This repository is a public project showcase, not a software download or source-code release.
+CardSmith is still in development. I'm testing it on real collections, and there's plenty of work left before I'm comfortable calling it a finished product. This is the public page where I'm sharing the progress, not a download for the application or its source code.
 
-## What CardSmith is being built to do
+## What I'm building it to do
 
-| Capability | Intended experience |
+| Feature | What it means for you |
 | --- | --- |
-| Bulk import | Import individual card photographs, scans or entire binder pages, including optional back images. |
-| Automatic card isolation | Detect individual cards, crop them, correct perspective and orient them for reading. |
-| Front/back pairing | Associate both views of the same physical card without silently merging ambiguous cards. |
-| Local recognition | Extract visible names, numbers, dates, manufacturers and other identifying information using local OCR and image analysis. |
-| Card identification | Compare visible evidence with permitted reference data and distinguish confirmed, provisional and unresolved identities. |
-| Collection management | Maintain a persistent inventory with card images, provenance, search, review and corrections. |
-| Optional appraisal | Research value only when explicitly requested, with sufficient identity and market evidence. |
-| Reporting | Export collection information and appropriate appraisal reports. |
+| Bulk import | Add pictures, scans or entire binder pages, with backs if you have them. |
+| Automatic cropping | Find individual cards, straighten them and get them ready to read. |
+| Front/back pairing | Keep both sides of the same card together without guessing when a match is unclear. |
+| Local OCR | Read visible names, years, card numbers, manufacturers and other details. |
+| Identification | Look up possible matches using permitted reference data and flag anything it can't confidently identify. |
+| Inventory | Keep your collection, images, search, corrections and source information in one place. |
+| Optional appraisal | Look up values when you ask for them, using the identity and available market evidence. |
+| Reporting | Export your collection and appraisal information. |
 
-The goal is to process routine clear cards with minimal manual intervention, while giving collectors practical tools to review and correct uncertain results. Original photographs and verified corrections are intended to remain preserved across processing runs.
+The goal is to get the clear, straightforward cards through automatically and leave you with the ones that actually need attention. Your original pictures and confirmed corrections should stay intact.
 
-## Local-first by design
+## Why local-first?
 
-CardSmith is intended to operate without a mandatory internet connection, cloud AI account, API key or paid service for core image processing, recognition using local evidence, and inventory management.
+I don't want people to need an internet connection, an AI subscription, an API key or a paid service just to scan and organize the cards they already own.
 
-Online market research and other optional connected services are separate from normal offline processing. Nothing should be automatically sent to an online valuation service simply because a card has been scanned.
+The plan is to handle the core work locally using image processing, OCR and smaller, purpose-built models where they actually help. General-purpose generative AI isn't supposed to be a requirement.
 
-CardSmith is being developed to use efficient conventional image processing, local OCR and appropriately qualified task-specific models. General-purpose generative AI is not intended to be a required runtime component.
+Online research and valuation are separate and optional. Importing a card shouldn't automatically send it to an online service. If you want values, you can ask for them after reviewing the cards.
 
-## Cards and collections
+## What cards will it support?
 
-Baseball cards are the initial development and testing focus. The broader goal is support for other sports cards and trading card games, including Pokémon, Yu-Gi-Oh! and Magic: The Gathering.
+I'm starting with baseball cards because they're a particularly difficult place to start. The plan is to expand to other sports cards, Pokémon, Yu-Gi-Oh! and Magic: The Gathering as the recognition, reference data and licensing are sorted out. Those are future goals, not categories I'm claiming are ready today.
 
-Expansion depends on appropriate recognition accuracy, reference data, licensing and independent qualification. These additional categories are planned scope, not currently verified support.
+## Where things stand
 
-## Development progress
+Bulk importing, local OCR, inventory, cropping, pairing and reporting are already being worked on and exercised. I'm also training and testing local specialist models. If a new model doesn't improve the results, it doesn't get added just for the sake of using AI.
 
-Current development includes working bulk-ingestion, local OCR, persistent inventory, crop and pairing workflows, reporting, and experimental local specialist training.
+One offline test processed 23 real source images into 135 processing records without recorded source or record failures. None of those records had a confirmed ID or a numeric value; they still needed review. The pipeline ran, but that doesn't mean the recognition is where I want it yet.
 
-A documented offline development replay processed 23 real source images into 135 processing records without recorded source or record failures. All records remained review-gated; none had a confirmed identification or numeric valuation. This demonstrates pipeline execution, not crop or identification accuracy. Real-world isolation and recognition remain the main development priorities.
+The biggest priorities right now are getting the crops and identification right on actual collection photos.
 
-Experimental models are compared against existing methods before adoption. Candidates that make results worse or fail to provide useful coverage are not promoted into the default processing path.
+## Real CardSmith output
 
-## Representative development images
+Here are 32 actual crop outputs from the software. Some are good, some need work, and that's the point. I want people to see what it's actually doing rather than just show off the best results.
 
-Browse the 32-image owner-approved gallery below. These original CardSmith crop outputs show varied source quality, front and back roles, and examples marked for review. The gallery is illustrative material, not a labeled benchmark and not evidence of recognition accuracy.
+Click any picture to view it larger. These aren't verified card IDs, confirmed front/back pairs or an accuracy benchmark.
 
 <table>
 <tr>
@@ -100,48 +100,40 @@ Browse the 32-image owner-approved gallery below. These original CardSmith crop 
 </tr>
 </table>
 
-The original-quality 289-image sample is distributed separately through the private tester channel. It is not included in this public repository.
+The separate 289-image original-quality sample is for private testing, not part of this public repository.
 
-## Roadmap
+## What I'm working toward
 
 | Priority | Goal |
 | --- | --- |
-| 1 | Improve real-world card boundary detection, isolation and orientation. |
-| 2 | Improve front/back association, local text recognition and exact card identification. |
-| 3 | Reduce processing time and unnecessary manual review for large collections. |
-| 4 | Strengthen inventory correction, recovery, export and installation workflows. |
-| 5 | Qualify a controlled Windows beta and expand hardware and platform testing. |
-| 6 | Extend card-category coverage and permitted reference and valuation integrations. |
+| 1 | Better card detection, cropping and orientation on real photos. |
+| 2 | More accurate front/back pairing, OCR and exact card identification. |
+| 3 | Faster processing with less manual work on large collections. |
+| 4 | Better inventory editing, recovery, exports and installation. |
+| 5 | Get a Windows beta properly tested and expand hardware and platform testing. |
+| 6 | Support more card categories and permitted reference and pricing services. |
 
-The engineering target is approximately 10,000 cards in an eight-hour work period on suitable hardware. This is a development objective, not an achieved benchmark.
+My long-term speed target is around 10,000 cards in eight hours on suitable hardware. For accuracy, the minimum goals are at least 90% of representative crop tests reaching 90% overlap and 95% correct exact-printing identification among automatically confirmed cards, with at least 90% coverage. I haven't reached those targets on independent representative tests yet.
 
-The minimum release accuracy objectives include at least 90% of independently evaluated crop cases meeting a 90% overlap floor, and at least 95% exact-printing identification accuracy among automatically confirmed cases with at least 90% coverage of representative evaluated cases. Numeric valuations must abstain when identity or market evidence is insufficient. These objectives have not yet been achieved on representative independent evidence.
+I'd rather have the app leave a price blank than make up a number. Zero incorrect numeric valuations is the goal.
 
 ## Get involved
 
-Collectors, card dealers and hobbyists are welcome to share feedback on the workflows they would find useful.
+If you collect, buy or sell cards, I'd like to hear what would actually make this useful for you. Suggestions, feedback and interest in testing are welcome.
 
-- [Suggest a feature or share feedback](https://github.com/tiddy-tickler/CardSmith/issues/new)
-- [Follow project updates](https://github.com/tiddy-tickler/CardSmith) by watching this repository.
+- [Leave feedback or suggest a feature](https://github.com/tiddy-tickler/CardSmith/issues/new)
+- [Follow the project](https://github.com/tiddy-tickler/CardSmith)
 
-Please do not post private collection data, unredacted diagnostics, credentials, personal information or copyrighted datasets in public issues.
+Please keep private collection information, credentials, unredacted logs and copyrighted datasets out of public issues. Test builds will be shared separately with approved testers; I don't have a public download or release date to announce yet.
 
-Controlled test builds will be distributed separately to approved testers. Public downloads and release dates are not being promised at this stage.
+## Supporting the project
 
-## Support CardSmith development
-
-CardSmith is an independently developed project. Community involvement helps improve its recognition accuracy, usability and compatibility with real collections.
-
-Financial support is entirely optional. Sharing the project, offering constructive feedback, volunteering relevant technical expertise, or expressing interest in controlled beta testing are also valuable ways to help.
-
-If you would like to support the ongoing development effort financially, the project's fundraiser is available here:
+I'm developing CardSmith independently. If you like the idea and want to help, sharing it, giving feedback or offering technical help all count. Financial support is entirely optional.
 
 **[Support CardSmith on GoFundMe](https://gofund.me/729fbb185)**
 
-## About this repository
+## A quick note
 
-This public repository is for project information, progress updates and approved demonstrations. The application source code, internal development history, private fixtures and experimental artifacts are maintained separately. No software license or distribution permission is granted by this showcase.
+I'm keeping the application source, internal development material and private test data separate from this showcase. This page doesn't grant a software license or permission to distribute the application.
 
-CardSmith provides evidence-based identification and appraisal assistance, not professional card grading or guaranteed market values.
-
-CardSmith is an independent project and is not affiliated with or endorsed by the card brands or publishers mentioned above.
+CardSmith is meant to help identify and appraise cards, not replace professional grading or guarantee what a card will sell for. It's an independent project and isn't affiliated with or endorsed by the card brands or publishers mentioned here.
