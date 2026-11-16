@@ -102,6 +102,12 @@ All 32 examples are shown right here. These aren't verified card IDs, confirmed 
 
 **Want to see more?** I've put together a separate gallery with more of CardSmith's actual results, including examples that still need work. You can browse the pictures directly on GitHub without downloading anything.
 
+These images come from various stages of CardSmith's development, including some of the earliest attempts at automatic card detection and cropping. The software has already progressed beyond many of the issues shown here.
+
+I've intentionally included the good, the bad and the downright ridiculous results, along with some of the original source images. I want people to see the actual development process, not just a collection of handpicked successes.
+
+These pictures show where CardSmith has been, not necessarily where it is today.
+
 **[View the extended image collection](https://github.com/tiddy-tickler/CardSmith/releases/tag/image-gallery-2026-11-16)**
 
 ## What I'm working toward
