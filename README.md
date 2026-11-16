@@ -100,7 +100,11 @@ Click any picture to view it larger. These aren't verified card IDs, confirmed f
 </tr>
 </table>
 
-I'm also planning to make the larger 289-image collection available as a separate ZIP for anyone who wants to look through more of the results. It isn't available as a public download yet.
+**Want to see more?** I've put together a larger collection of 289 original-quality images for anyone interested in looking through more of the results. I'm keeping it as a separate ZIP (about 474 MiB) so you don't have to scroll through hundreds of pictures here.
+
+[Extended image collection — GitHub Releases](https://github.com/tiddy-tickler/CardSmith/releases)
+
+The ZIP is prepared and awaiting upload. It's a collection of real development results, not an application installer.
 
 ## What I'm working toward
 
