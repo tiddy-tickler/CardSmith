@@ -100,11 +100,9 @@ All 32 examples are shown right here. These aren't verified card IDs, confirmed 
 </tr>
 </table>
 
-**Want to see more?** I've put together a larger collection of 289 original-quality images for anyone interested in looking through more of the results. I'm keeping it as a separate ZIP (about 474 MiB) so you don't have to scroll through hundreds of pictures here.
+**Want to see more?** I've put together a separate gallery with more of CardSmith's actual results, including examples that still need work. You can browse the pictures directly on GitHub without downloading anything.
 
-[Extended image collection — GitHub Releases](https://github.com/tiddy-tickler/CardSmith/releases)
-
-The ZIP is prepared and awaiting upload. It's a collection of real development results, not an application installer.
+**[View the extended image collection](https://github.com/tiddy-tickler/CardSmith/releases/tag/image-gallery-2026-11-16)**
 
 ## What I'm working toward
 
